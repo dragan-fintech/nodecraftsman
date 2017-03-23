@@ -1,5 +1,7 @@
 /*
 this one is ok but complicated :(
+
+note: use with server a_server.js
 */
 
 'use strict'

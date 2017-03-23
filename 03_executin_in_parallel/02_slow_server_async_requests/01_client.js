@@ -1,6 +1,8 @@
 /*
 this deos not work because console.log is executed
 before the requests are completed
+
+note: use with server a_server.js
 */
 
 'use strict'
