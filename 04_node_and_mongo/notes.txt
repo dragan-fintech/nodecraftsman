@@ -1,0 +1,20 @@
+Mongo is document-oriented NoSQL database:
+
+Server --+- Database --+- Collection --+- Document
+         |             |               +- Document
+         |             |               +- ...
+         |             |
+         |             +- Collection --+- Document
+         |             |               +- Document
+         |             |               +- ...
+         |             |
+         |             +- ...
+         +- ...
+
+Collection = Table
+Document = Row in the Table
+
+Documents are similar but not identical in structure
+
+- Documents are represented in the JSON notation
+- Every document has an _id, a 24-digit hex value
