@@ -15,7 +15,7 @@ var url = 'http://localhost:8080/'
 
 async.series(
     [
-
+        // callback is used to return value to the async
         function(callback) {
             request.get(url+'getUserName?id=1234', function(err, res, body) {
                 callback(null, 'Name: '+JSON.parse(body).value)
@@ -41,6 +41,8 @@ async.series(
         }
     ],
 
+    // results is an array of values returned by callback functions
+    // (the second parameter of the callback)
     function(err, results) {
         for (var i=0; i<results.length; i++) {
             console.log(results[i])
