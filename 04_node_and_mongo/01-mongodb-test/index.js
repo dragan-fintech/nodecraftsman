@@ -1,5 +1,5 @@
 /*
-everytime you run this new record is added to the db
+everytime this is run new record is added to the db
 */
 'use strict';
 
